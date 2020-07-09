@@ -76,7 +76,7 @@ curl -XGET http://localhost:5000/v1/dashboard/departments
         "message": "OK"
     },
     "data": {
-        "1": {
+        [ {
             "department_id": 1,
             "department_name": "Product",
             "pending_objectives": 1,
@@ -94,7 +94,7 @@ curl -XGET http://localhost:5000/v1/dashboard/departments
                 }
             }
         },
-        "2": {
+         {
             "department_id": 2,
             "department_name": "Engineering",
             "pending_objectives": 1,
@@ -106,7 +106,7 @@ curl -XGET http://localhost:5000/v1/dashboard/departments
                 }
             },
             "objectives": {
-                "2": {
+                [ {
                     "id": 2,
                     "objective_text": "Raise participation in Surveys"
                 },
@@ -114,8 +114,9 @@ curl -XGET http://localhost:5000/v1/dashboard/departments
                     "id": 3,
                     "objective_text": "Improve Engineering Processes"
                 }
+                ]
             }
         }
-    }
+    ]
 }
 ```
