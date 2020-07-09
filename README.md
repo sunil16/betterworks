@@ -75,47 +75,46 @@ curl -XGET http://localhost:5000/v1/dashboard/departments
         "code": 200,
         "message": "OK"
     },
-    "data": {
-        [ {
+    "data": [
+         {
             "department_id": 1,
             "department_name": "Product",
             "pending_objectives": 1,
             "complete_objectives": 0,
-            "employees": {
-                "1": {
+            "employees": [
+                 {
                     "id": 1,
                     "emp_name": "Navneet"
                 }
-            },
-            "objectives": {
-                "1": {
+            ],
+            "objectives": [
+                 {
                     "id": 1,
                     "objective_text": "Improve HR Processes"
                 }
-            }
+            ]
         },
          {
             "department_id": 2,
             "department_name": "Engineering",
             "pending_objectives": 1,
             "complete_objectives": 1,
-            "employees": {
-                "2": {
+            "employees": [
+                 {
                     "id": 2,
                     "emp_name": "Kailash"
                 }
-            },
-            "objectives": {
-                [ {
+            ],
+            "objectives": [
+                {
                     "id": 2,
                     "objective_text": "Raise participation in Surveys"
                 },
-                "3": {
+                 {
                     "id": 3,
                     "objective_text": "Improve Engineering Processes"
                 }
-                ]
-            }
+            ]
         }
     ]
 }
