@@ -9,7 +9,6 @@ from app.middleware import JSONTranslator, DatabaseSessionManager
 from app.database import db_session, init_session
 
 from app.api.common import base
-# from app.api.v1.user import users
 from app.api.v1 import dashboard
 from app.errors import AppError
 from app.utils import HandleCORS
